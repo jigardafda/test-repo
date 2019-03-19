@@ -9,6 +9,7 @@ function initServer() {
   const port =  process.env.PORT || 3000;
 
   app.get('/', (req, res) => res.send('Hello World!'))
+  app.get('/test', (req, res) => res.send('Test Hello World!'))
   app.listen(port, () => console.log(`Test app listening on port ${port}!`))
 }
 
